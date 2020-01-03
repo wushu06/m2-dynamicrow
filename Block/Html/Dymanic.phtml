@@ -1,0 +1,22 @@
+<?php
+
+namespace Tbb\Repeater\Block\Html;
+
+use Magento\Framework\View\Element\Template;
+
+
+class Dymanic extends Template
+{
+
+    public function __construct(
+        \Magento\Framework\View\Element\Template\Context $context,
+        array $data = []
+    ) {
+        parent::__construct($context, $data);
+        $this->setTemplate('Tbb_Repeater::row.phtml');
+
+    }
+
+
+
+}

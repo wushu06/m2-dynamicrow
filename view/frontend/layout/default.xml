@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+
+        <referenceContainer name="content">
+            <!--<block class="Tbb\Data\Block\Data" name="rowDynamic" template="Tbb_Repeater::row.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Tbb\Repeater\Model\DynamicRows</argument>
+                </arguments>
+            </block>-->
+            <block class="Tbb\Repeater\Block\Data" name="rowDynamic" template="Tbb_Repeater::row.phtml" />
+        </referenceContainer>
+    </body>
+</page>

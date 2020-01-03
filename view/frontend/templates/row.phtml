@@ -1,0 +1,26 @@
+<?php
+$collectionById = $block->getCollectionById(1);
+echo 'name with id 1 : '.$collectionById->getName();
+
+
+echo '<hr/>';
+$collection = $block->getCollection();
+foreach ($collection as $post):
+
+    echo 'id: '.$post->getId().' name: '.$post->getName().'<br/>';
+
+endforeach;
+?>
+
+<?php
+
+
+//$viewModel = $block->getViewModel();
+/*foreach ($viewModel->getData() as $row){
+    echo $row['row_name'];
+}*/
+/*echo '<pre>';
+var_dump( $viewModel->getName() );
+echo '</pre>';*/
+
+?>
